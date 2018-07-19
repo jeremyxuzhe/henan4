@@ -27,16 +27,25 @@ class Navigation extends Component {
     return (
       <div className="container">
         <Navbar light expand="md">
-          <Link to='/' className="navbar-brand">Company</Link>
+          <Link to='/' className="navbar-brand">河南同乡会</Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link to='/' className="nav-link">Home</Link>
+                <Link to='/' className="nav-link">首页</Link>
               </NavItem>
               <NavItem>
-                <Link to='/components' className="nav-link">Components</Link>
+                <Link to='/introduction' className="nav-link">介绍</Link>
               </NavItem>
+              <NavItem>
+                <Link to='/' className="nav-link">活动</Link>
+              </NavItem>
+              <NavItem>
+                <Link to='/contact' className="nav-link">联系</Link>
+              </NavItem>
+              {/*<NavItem>
+                <Link to='/components' className="nav-link">Components</Link>
+              </NavItem>*/}
             </Nav>
           </Collapse>
         </Navbar>
